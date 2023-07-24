@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Press+Start+2P&display=swap');
+
+header {
+    background-color: #3c363b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Cookie', cursive;
+    font-family: 'Press Start 2P', cursive;
+    height: 120px;
+    position: sticky;
+    top: -1px;
+}
+header > h1 {
+    color: #fcd7da;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+}
+#icone-1 {
+    font-size: 2.5em;
+    display: block;
+    width: 45px;
+    align-self: flex-end;
+    color: #fcd7da;
+    text-shadow: 1px 1px 1px black;
+    cursor: pointer;
+}
+#icone-1:active {
+    text-shadow: none;
+}
+#navbar-mobile {
+    background-color: #3c363b;
+    width: 200px;
+    position: absolute;
+    right: 0%;
+    top: 100%;
+    border: 1px solid #f58f9a;
+    box-shadow: 1px 1px 1px black;
+    height: 200px;
+}
+#navbar-mobile > ul > li {
+    list-style-type: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #fcd7da;
+    cursor: pointer;
+    border-bottom: 1.5px solid #f58f9a;
+    font-family: 'Cookie', cursive;
+    font-family: 'Press Start 2P', cursive;
+    line-height: 49px;
+}
+#navbar-pc {
+    display: none;
+}
+@media screen and (min-width:1280px) {
+    #icone-1 {
+        display: none;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header > h1 {
+        padding-left: 20px;
+    }
+    #navbar-pc > ul {
+        display: flex;
+        flex-direction: row;
+        column-gap: 15px;
+        margin-top: 77px;
+    }
+    #navbar-pc > ul > li {
+        list-style-type: none;
+        font-size: 1.5em;
+        color: #fcd7da;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    #navbar-pc > ul > li:hover {
+        color: #f3e2e8;
+    }
+    #navbar-pc {
+        display: block;
+    }
+}
+
+/* Home */
+#home {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 800px;
+}
+#sobre {
+    height: 200px;
+}
+#texto {
+    height: 300px;
+}
+#texto > h3 {
+    color: #3c363b;
+}
+#avatar {
+    height: 300px;
+
+}
