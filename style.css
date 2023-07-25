@@ -243,23 +243,35 @@ header > h1 {
 /* Sobre */
 #Sobre {
     background-color: #1f192f;
-    height: 800px;
+    height: 1000px;
 }
 #Sobre > .row >.col-12 {
     height: 400px;
-    background-color: #2d6073;
     width: 80%;
     margin: auto;
     margin-top: 30px;
-    border: 5px solid #b5e8c3;
 }
 #sobre-1 {
     background-color: #e2deed;
     margin-top: 30px;
     padding: 20px;
+    border: 5px solid #b5e8c3;
 }
 #sobre-1 > p {
     text-align: center;
     color: #f0f7da;
     font-size: 1.2em;
+}
+#sobre-2 {
+
+}
+#github {
+    height: 200px;
+    width: 200px;
+}
+@media screen  and (min-width:1024px) {
+    #Sobre > .row > .col-12 {
+        width: 40%;
+        margin: 20px;
+    }
 }
