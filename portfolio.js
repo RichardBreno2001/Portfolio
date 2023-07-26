@@ -3,7 +3,8 @@ const navbar_mobile = document.getElementById('navbar-mobile')
 const navbar_pc = document.querySelector('#navbar-pc')
 let texto = document.getElementById('texto_2')
 const frase = 'Richard Breno, desenvolvedor free-lancer.'
-const intervalo = 100
+const intervalo = 150
+const github = document.getElementById('github')
 
 
 btn_1.addEventListener('click',()=>{
@@ -34,4 +35,6 @@ function escrever(texto,frase,intervalo) {
     }, intervalo);
 }
 
-escrever(texto,frase,intervalo)
+setTimeout(function(){
+    escrever(texto,frase,intervalo)
+},1000)

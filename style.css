@@ -70,16 +70,39 @@ header > h1 {
     #navbar-pc > ul > li {
         list-style-type: none;
         font-size: 1.5em;
-        color: #b5e8c3;
         cursor: pointer;
         padding-right: 20px;
         text-transform: uppercase;
+    }
+    #navbar-pc > ul > li > a {
+        text-decoration: none;
+        color: #b5e8c3;
+    }
+    #navbar-pc > ul > li > a:hover {
+        color: #d9e7dc;
     }
     #navbar-pc > ul > li:hover {
         color: #9c9994;
     }
     #navbar-pc {
         display: block;
+    }
+    .nav {
+        text-decoration: none;
+        position: relative;
+    }
+    .nav::before {
+        content: ' ';
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 0px;
+        height: 1px;
+        background-color: #65b8a6;
+        transition: all 1.5s ease;
+    }
+    .nav:hover::before {
+        width: 100%;
     }
 }
 
@@ -131,6 +154,7 @@ header > h1 {
     text-transform: uppercase;
     line-height: 50px;
 }
+
 #logos {
     display: flex;
     flex-direction: column;
@@ -173,7 +197,7 @@ header > h1 {
         flex-wrap: wrap;
     }
     #home {
-        height: 800px;
+        height: 700px;
     }
     #texto-3 {
         margin-top: 20px;
@@ -243,7 +267,7 @@ header > h1 {
 /* Sobre */
 #Sobre {
     background-color: #1f192f;
-    height: 1000px;
+    height: 900px;
 }
 #Sobre > .row >.col-12 {
     height: 400px;
@@ -251,27 +275,209 @@ header > h1 {
     margin: auto;
     margin-top: 30px;
 }
+#Sobre > .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #sobre-1 {
     background-color: #e2deed;
     margin-top: 30px;
     padding: 20px;
     border: 5px solid #b5e8c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #sobre-1 > p {
     text-align: center;
     color: #f0f7da;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
-#sobre-2 {
-
+#sobre-2 > h5 {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px 2px black;
 }
 #github {
+    height: 250px;
+    width: 250px;
+    background-color: #b5e8c3;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
+    transition: 1s;
+    border: 5px solid #2d6073;
+}
+#github:active {
     height: 200px;
     width: 200px;
+    box-shadow: none;
 }
 @media screen  and (min-width:1024px) {
     #Sobre > .row > .col-12 {
         width: 40%;
         margin: 20px;
     }
+    #github {
+        height: 300px;
+        width: 300px;
+    }
+    #github:hover {
+        height: 250px;
+        width: 250px;
+        box-shadow: none;
+    }
+    #Sobre {
+        height: 600px;
+    }
+    #sobre-1 > p {
+        font-size: 1.5em;
+    }
+}
+
+
+/* Projetos */
+#projetos {
+    height: 3500px;
+    background-color: #f0f7da;
+}
+.projetos {
+    height: 400px;
+}
+.cards {
+    height: 350px;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: -17px 5px 40px #1f192f;
+    border: 3px solid #1f192f;
+    position: relative;
+}
+#card-1 {
+    background-image: url('imagens/projeto-3.png');
+}
+#card-2 {
+    background-image: url('imagens/projeto-2.png');
+    background-size: contain;
+}
+#card-3 {
+    background-image: url('imagens/projeto-1.png');
+}
+#card-4 {
+    background-image: url('imagens/projeto-4.png');
+}
+#card-5 {
+    background-image: url('imagens/projeto-5.png');
+}
+#card-6 {
+    background-image: url('imagens/projeto-6.png');
+}
+#card-7 {
+    background-image: url('imagens/projeto-7.png');
+}
+#card-8 {
+    background-image: url('imagens/projeto-8.png');
+}
+.titulo {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity:0 ;
+    transition: 0.8s;
+    background-color: #1f192f;
+}
+.titulo > h3 {
+    color: white;
+}
+.titulo > a {
+    text-decoration: none;
+    color: white;
+    background-color: #65b8a6;
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 30px;
+    border: 2px solid #f0f7da;
+}
+.cards:hover > .titulo {
+    opacity: 1;
+    transform: translateY(80px);
+}
+#projetos > .row > h2 {
+    text-align: center;
+    font-size: 5em;
+    color: #65b8a6;
+    text-shadow: 2px 2px 2px black;
+}
+
+@media screen and (min-width:1024px) and (max-width:1280px) {
+    #projetos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        height: 1700px;
+    }
+    #projetos > .row > .col-12 {
+        width: 50%;
+    }
+    .cards {
+        width: 400px;
+        height: 300px;
+    }
+    
+}
+@media screen and (min-width:1280px) {
+    #projetos > .row > .col-12 {
+        width: 50%;
+    }
+    .cards {
+        width: 500px;
+        height: 300px;
+    }
+    #projetos {
+        height: 1700px;
+    }
+}
+
+
+
+/* Contato */
+
+#Contato {
+    height: 380px;
+    background-color: #1f192f;
+}
+#Contato > h2 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+}
+#Contato > p {
+    color: white;
+    text-align: center;
+}
+#whatsapp {
+    height: 100px;
+    width: 100px;
+    border: 2px solid #65b8a6;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    box-shadow: 2px 2px 2px black;
+    transition: 0.5s;
+}
+#whatsapp:active {
+    box-shadow: none;
+    width: 90px;
+    height: 90px;
 }
