@@ -2,7 +2,7 @@ let btn_1 = document.getElementById('icone-1')
 const navbar_mobile = document.getElementById('navbar-mobile')
 const navbar_pc = document.querySelector('#navbar-pc')
 let texto = document.getElementById('texto_2')
-const frase = 'Richard Breno, desenvolvedor free-lancer.'
+const frase = 'Richard Breno, desenvolvedor front-end.'
 const intervalo = 150
 const github = document.getElementById('github')
 
