@@ -362,7 +362,7 @@ header > h1 {
     position: relative;
 }
 #card-1 {
-    background-image: url('imagens/projeto-3.png');
+    background-image: url('imagens/projeto-4.png');
 }
 #card-2 {
     background-image: url('imagens/projeto-2.png');
@@ -372,19 +372,19 @@ header > h1 {
     background-image: url('imagens/projeto-1.png');
 }
 #card-4 {
-    background-image: url('imagens/projeto-4.png');
+    background-image: url('imagens/projeto-7.png');
 }
 #card-5 {
-    background-image: url('imagens/projeto-5.png');
+    background-image: url('imagens/projeto-8.png');
 }
 #card-6 {
     background-image: url('imagens/projeto-6.png');
 }
 #card-7 {
-    background-image: url('imagens/projeto-7.png');
+    background-image: url('imagens/projeto-3.png');
 }
 #card-8 {
-    background-image: url('imagens/projeto-8.png');
+    background-image: url('imagens/projeto-5.png');
 }
 .titulo {
     padding: 20px;
